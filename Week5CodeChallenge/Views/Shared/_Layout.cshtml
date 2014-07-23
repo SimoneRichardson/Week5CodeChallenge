@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+      <header>
+         <img class src="C:\Users\Technologist\Documents\GitHub\ContactFormConsole\Week5CodeChallenge\Content\51700.gif"</a>
+        <nav id="navigation">
+            <a href="@Url.Action("Index","Home")" class="button">Home Page</a>
+            <a href="@Url.Action("Index","About")" class="button">About</a>
+            <a href="@Url.Action("Index", "Work")" class="button">Work</a>
+            <a href="@Url.Action("Index", "Careers")" class="button">Careers</a>
+            <a href="@Url.Action("Index", "Contact")" class="button">Contact</a>
+        </nav>d4
+    </header>
+    <br style="clear:both;"/>
+    
+    @RenderBody()
+    
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/Main.js"></script>
+    @RenderSection("scripts", required: false)
+    <div id="left" class="footer">
+        <footer style="font-size: 20px">
+            Copyright 2014 Fake Studio
+        </footer>
+    </div>
+    <div id="right" class="footer">
+        <footer>
+            <a href="@Url.Action("Index","Home")" class="button2">Home Page</a>
+            <a href="@Url.Action("Index","About")" class="button2">About</a>
+            <a href="@Url.Action("Index", "Work")" class="button2">Work</a>
+            <a href="@Url.Action("Index", "Careers")" class="button2">Careers</a>
+            <a href="@Url.Action("Index", "Contact")" class="button2">Contact</a>
+        </footer>
+    </div>
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
